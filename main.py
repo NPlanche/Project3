@@ -80,7 +80,7 @@ def index():
             height: 225px;
         }
         *{
-            background-color: lightblue;
+            background-color: #93C47D;
         }
         
         button{
@@ -120,7 +120,7 @@ def index():
                 urlBase = 'https://storage.googleapis.com/project2database/static/image/'
                 image_name = image_url[61:len(image_url)]
                 
-                index_html += "<a href='http://127.0.0.1:8080/?image="+ image_name +"'> <img class='image' src='" + blob.public_url + "'> </a>"
+                index_html += "<a href='http://127.0.0.1:8080/?image="+ image_name +"'><img class='image' src='" + blob.public_url + "'></a>"
 
                 
                 
