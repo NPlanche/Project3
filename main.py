@@ -80,11 +80,11 @@ def index():
             height: 225px;
         }
         *{
-            background-color: blue;
+            background-color: RBG(55,109,237);
         }
         
         button{
-            background-color: RBG(55,109,237);
+            background-color: lightgray;
         }
     
         </style>
