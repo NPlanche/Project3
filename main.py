@@ -40,9 +40,27 @@ def index():
         query_def=parse.parse_qs(parse.urlparse(url).query)['image'][0]
         urlBase = 'https://storage.googleapis.com/project2database/static/image/'
         src = urlBase + query_def
-        index_html ="""
-        <img class='image' src='"""
-        index_html+= src + "'> """       
+        index_html =""" <style>
+        
+
+        .image{
+            display: block;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .container{
+            padding:200px 0px;            
+        }
+        
+        </style>
+        <div class = "container">
+            <table>
+                <tr>
+                    <td>
+
+                    <img class='image' src='"""
+        index_html+= src + "'></td> <tr></div> """       
        
         return index_html
     else:
